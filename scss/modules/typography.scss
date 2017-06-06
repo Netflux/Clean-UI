@@ -7,7 +7,7 @@
 html, body {
 	font-family: $font-family;
 	font-size: $font-size;
-	font-weight: $font-weight;
+	font-weight: $font-weight-normal;
 	color: $font-color;
 	line-height: $line-height;
 }
@@ -47,7 +47,7 @@ blockquote {
 		margin-bottom: 0;
 		font-size: 1.2rem;
 		font-style: italic;
-		font-weight: 300;
+		font-weight: $font-weight-thin;
 	}
 
 	small {
@@ -55,6 +55,22 @@ blockquote {
 		color: $blockquote-font-color;
 	}
 }
+
+// Text Transformation
+// ===================================
+.text-left		{ text-align: left !important; }
+.text-center	{ text-align: center !important; }
+.text-right		{ text-align: right !important; }
+.text-justify	{ text-align: justify !important; }
+
+.text-lowercase		{ text-transform: lowercase !important; }
+.text-uppercase		{ text-transform: uppercase !important; }
+.text-capitalize	{ text-transform: capitalize !important; }
+
+.font-weight-thin	{ font-weight: $font-weight-thin; }
+.font-weight-normal	{ font-weight: $font-weight-normal; }
+.font-weight-bold	{ font-weight: $font-weight-bold; }
+.font-italic		{ font-style: italic; }
 
 // Contextual Emphasis
 // ===================================
