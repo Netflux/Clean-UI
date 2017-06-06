@@ -1,0 +1,30 @@
+{
+  "name": "clean-ui",
+  "version": "1.0.0",
+  "description": "Clean UI is a CSS theme that promotes clarity through the use of clean visuals",
+  "scripts": {
+    "start": "./bin/start",
+    "build": "./bin/build",
+    "watch": "./bin/watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Netflux/Clean-UI.git"
+  },
+  "keywords": [
+    "clean",
+    "ui",
+    "css"
+  ],
+  "author": "Netflux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Netflux/Clean-UI/issues"
+  },
+  "homepage": "https://github.com/Netflux/Clean-UI#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
+  }
+}
