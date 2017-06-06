@@ -58,20 +58,20 @@ blockquote {
 
 // Contextual Emphasis
 // ===================================
-.text-primary { @include text-emphasis(map-get($theme-inverse, 1)); }
-.text-inverse { @include text-emphasis(map-get($theme-primary, 1)); }
-.text-accent { @include text-emphasis($theme-accent); }
-.text-muted { @include text-emphasis($theme-muted); }
-.text-success { @include text-emphasis($theme-success); }
-.text-warning { @include text-emphasis($theme-warning); }
-.text-danger { @include text-emphasis($theme-danger); }
-.text-info { @include text-emphasis($theme-info); }
+.text-primary	{ @include text-emphasis(map-get($theme-inverse, 1)); }
+.text-inverse	{ @include text-emphasis(map-get($theme-primary, 1)); }
+.text-accent	{ @include text-emphasis($theme-accent); }
+.text-muted		{ @include text-emphasis($theme-muted); }
+.text-success	{ @include text-emphasis($theme-success); }
+.text-warning	{ @include text-emphasis($theme-warning); }
+.text-danger	{ @include text-emphasis($theme-danger); }
+.text-info		{ @include text-emphasis($theme-info); }
 
-.bg-primary { @include background-emphasis(map-get($theme-primary, 1)); }
-.bg-inverse { @include background-emphasis(map-get($theme-inverse, 1)); }
-.bg-accent { @include background-emphasis($theme-accent); }
-.bg-muted { @include background-emphasis($theme-muted); }
-.bg-success { @include background-emphasis($theme-success); }
-.bg-warning { @include background-emphasis($theme-warning); }
-.bg-danger { @include background-emphasis($theme-danger); }
-.bg-info { @include background-emphasis($theme-info); }
+.bg-primary		{ @include background-emphasis(map-get($theme-primary, 1)); }
+.bg-inverse		{ @include background-emphasis(map-get($theme-inverse, 1)); }
+.bg-accent		{ @include background-emphasis($theme-accent); }
+.bg-muted		{ @include background-emphasis($theme-muted); }
+.bg-success		{ @include background-emphasis($theme-success); }
+.bg-warning		{ @include background-emphasis($theme-warning); }
+.bg-danger		{ @include background-emphasis($theme-danger); }
+.bg-info		{ @include background-emphasis($theme-info); }
