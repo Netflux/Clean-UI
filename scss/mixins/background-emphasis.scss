@@ -1,0 +1,11 @@
+@mixin background-emphasis($color) {
+	background-color: $color;
+
+	@at-root {
+		a#{&} {
+			&:hover {
+				background-color: darken($color, 10%);
+			}
+		}
+	}
+}

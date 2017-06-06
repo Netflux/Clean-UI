@@ -1,0 +1,99 @@
+// ===================================
+// Variables
+// ===================================
+
+// Colors
+// ===================================
+$red:						#f5564a;
+$red-dark:					#d74444;
+
+$green:						#5eb762;
+$green-dark:				#4c9a50;
+
+$blue:						#1db2f5;
+$blue-dark:					#1c94d6;
+
+$yellow:					#ffed4f;
+$yellow-dark:				#fbc642;
+
+$orange:					#ffa31a;
+$orange-dark:				#f6891a;
+
+$purple:					#a63db8;
+$purple-dark:				#8836ab;
+
+$teal:						#1aa194;
+$teal-dark:					#1a877a;
+
+$cyan:						#1ac3d8;
+$cyan-dark:					#1aa2b0;
+
+$bluegrey:					#708a97;
+$bluegrey-dark:				#586b74;
+
+$brown:						#87665b;
+$brown-dark:				#6e534b;
+
+$grey:						#a8a8a8;
+$grey-dark:					#717171;
+
+$white:						#ffffff;
+$black:						#000000;
+
+// Theme Colors
+// ===================================
+$dark: (
+	1:						#1b2025,
+	2:						#32383e,
+	3:						#2a3036,
+	4:						#23282d,
+	5:						#3a4046
+);
+$light: (
+	1:						$white,
+	2:						#eef0f2,
+	3:						#dce0e4,
+	4:						#cad0d6,
+	5:						#b8c0c8
+);
+
+$theme-primary:				$light;
+$theme-inverse:				$dark;
+$theme-accent:				$teal;
+$theme-accent-dark:			$teal-dark;
+$theme-muted:				$grey;
+$theme-success:				$green;
+$theme-warning:				$orange;
+$theme-danger:				$red;
+$theme-info:				$blue;
+
+// Scaffolding
+// ===================================
+$link-color:				$teal;
+$link-hover-color:			$teal-dark;
+$link-hover-decoration:		none;
+
+// Typography
+// ===================================
+$font-family:				'Hind', sans-serif;
+$font-size:					16px;
+$font-weight:				400;
+$font-color:				map-get($dark, 1);
+$line-height:				1.3;
+
+$heading-font-family:		inherit;
+$heading-font-weight:		600;
+$heading-font-color:		inherit;
+$heading-font-color-small:	$grey-dark;
+$heading-line-height:		1.15;
+
+$font-size-h1:				2em;
+$font-size-h2:				1.75em;
+$font-size-h3:				1.5em;
+$font-size-h4:				1.25em;
+$font-size-h5:				1em;
+$font-size-h6:				0.75em;
+
+$page-header-border-color:	$font-color;
+$blockquote-border-color:	$theme-accent;
+$blockquote-font-color:		$grey-dark;
