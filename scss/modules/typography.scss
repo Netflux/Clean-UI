@@ -36,24 +36,34 @@ h6 { font-size: $font-size-h6; }
 	border-bottom: 2px solid $page-header-border-color;
 }
 
-p, ul, ol, dl { margin: 0 0 0.75rem; }
+p, ul, ol, dl, pre { margin: 0 0 0.75rem; }
 
+blockquote, pre, code, samp { background-color: map-get($theme-primary, 2); }
+blockquote, pre { border-left: 4px solid $text-block-border-color; }
 blockquote {
-	border-left: 3px solid $blockquote-border-color;
 	margin: 1rem 2rem;
 	padding: 0.5rem 0.75rem;
 
-	p {
-		margin-bottom: 0;
+	p, footer {
 		font-size: 1.2rem;
 		font-style: italic;
 		font-weight: $font-weight-thin;
+		margin-bottom: 0;
 	}
 
-	small {
-		font-size: 1rem;
-		color: $blockquote-font-color;
-	}
+	small, footer { color: $blockquote-font-color; }
+	small { font-size: 1rem; }
+
+	footer::before { content: "\2014  "; }
+}
+
+pre, code, samp {
+	font-family: $font-family-monospace;
+	font-size: $font-size-monospace;
+}
+pre {
+	padding: 0.5rem;
+	overflow: auto;
 }
 
 // Text Transformation
