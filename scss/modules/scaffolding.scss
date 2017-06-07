@@ -2,6 +2,12 @@
 // Scaffolding
 // ===================================
 
+// Base Background
+// ===================================
+html, body {
+	background-color: map-get($theme-primary, 1);
+}
+
 // Links
 // ===================================
 a {

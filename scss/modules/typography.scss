@@ -84,8 +84,8 @@ pre {
 
 // Contextual Emphasis
 // ===================================
-.text-primary	{ @include text-emphasis(map-get($theme-inverse, 1)); }
-.text-inverse	{ @include text-emphasis(map-get($theme-primary, 1)); }
+.text-primary	{ @include text-emphasis(map-get($theme-inverse, 2)); }
+.text-inverse	{ @include text-emphasis(map-get($theme-primary, 2)); }
 .text-accent	{ @include text-emphasis($theme-accent); }
 .text-muted		{ @include text-emphasis($theme-muted); }
 .text-success	{ @include text-emphasis($theme-success); }

@@ -82,13 +82,13 @@ $font-size-monospace:		14px;
 $font-weight-thin:			300;
 $font-weight-normal:		400;
 $font-weight-bold:			600;
-$font-color:				map-get($dark, 1);
+$font-color:				map-get($theme-inverse, 2);
 $line-height:				1.3;
 
 $heading-font-family:		inherit;
 $heading-font-weight:		$font-weight-bold;
 $heading-font-color:		inherit;
-$heading-font-color-small:	$grey-dark;
+$heading-font-color-small:	map-get($theme-inverse, 5);
 $heading-line-height:		1.15;
 
 $font-size-h1:				2rem;
@@ -100,4 +100,4 @@ $font-size-h6:				0.75rem;
 
 $page-header-border-color:	$font-color;
 $text-block-border-color:	$theme-accent;
-$blockquote-font-color:		$grey-dark;
+$blockquote-font-color:		map-get($theme-inverse, 5);
