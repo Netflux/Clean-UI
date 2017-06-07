@@ -38,7 +38,7 @@ h6 { font-size: $font-size-h6; }
 
 p, ul, ol, dl, pre { margin: 0 0 0.75rem; }
 
-blockquote, pre, code, samp { background-color: map-get($theme-primary, 2); }
+blockquote, pre, code, samp { background-color: $text-block-background-color; }
 blockquote, pre { border-left: 4px solid $text-block-border-color; }
 blockquote {
 	margin: 1rem 2rem;
@@ -84,8 +84,8 @@ pre {
 
 // Contextual Emphasis
 // ===================================
-.text-primary	{ @include text-emphasis(map-get($theme-inverse, 2)); }
-.text-inverse	{ @include text-emphasis(map-get($theme-primary, 2)); }
+.text-primary	{ @include text-emphasis($font-color); }
+.text-inverse	{ @include text-emphasis($font-color-inverse); }
 .text-accent	{ @include text-emphasis($theme-accent); }
 .text-muted		{ @include text-emphasis($theme-muted); }
 .text-success	{ @include text-emphasis($theme-success); }
@@ -93,8 +93,8 @@ pre {
 .text-danger	{ @include text-emphasis($theme-danger); }
 .text-info		{ @include text-emphasis($theme-info); }
 
-.bg-primary		{ @include background-emphasis(map-get($theme-primary, 1)); }
-.bg-inverse		{ @include background-emphasis(map-get($theme-inverse, 1)); }
+.bg-primary		{ @include background-emphasis($theme-background); }
+.bg-inverse		{ @include background-emphasis($theme-background-inverse); }
 .bg-accent		{ @include background-emphasis($theme-accent); }
 .bg-muted		{ @include background-emphasis($theme-muted); }
 .bg-success		{ @include background-emphasis($theme-success); }
