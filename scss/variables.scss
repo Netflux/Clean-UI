@@ -42,19 +42,21 @@ $black:							#000000;
 
 // Theme Colors
 // ===================================
-$dark: (
-	1:							#1b2025,
-	2:							#23282d,
-	3:							#2a3036,
-	4:							#32383e,
-	5:							#3a4046
-);
 $light: (
 	1:							$white,
 	2:							#eef0f2,
 	3:							#dce0e4,
 	4:							#cad0d6,
-	5:							#b8c0c8
+	5:							#b8c0c8,
+	bg:							$white
+);
+$dark: (
+	1:							#1b2025,
+	2:							#23282d,
+	3:							#2a3036,
+	4:							#32383e,
+	5:							#3a4046,
+	bg:							#2a3036,
 );
 
 $theme-primary:					$light;
@@ -66,8 +68,8 @@ $theme-success:					$green;
 $theme-warning:					$orange;
 $theme-danger:					$red;
 $theme-info:					$blue;
-$theme-background:				map-get($theme-primary, 1);
-$theme-background-inverse:		map-get($theme-inverse, 1);
+$theme-background:				map-get($theme-primary, bg);
+$theme-background-inverse:		map-get($theme-inverse, bg);
 
 // Scaffolding
 // ===================================
@@ -103,5 +105,5 @@ $font-size-h6:					0.75rem;
 
 $page-header-border-color:		$font-color;
 $text-block-border-color:		$theme-accent;
-$text-block-background-color:	$font-color-inverse;
+$text-block-background-color:	map-get($theme-primary, 2);
 $blockquote-font-color:			map-get($theme-inverse, 5);
