@@ -31,12 +31,13 @@ h5 { font-size: $font-size-h5; }
 h6 { font-size: $font-size-h6; }
 
 .page-header {
-	margin-top: 2rem;
-	padding-bottom: $font-size;
+	padding-bottom: 0.5rem;
 	border-bottom: 2px solid $page-header-border-color;
 }
 
 p, ul, ol, dl, pre { margin: 0 0 0.75rem; }
+ul, ol { padding-left: 2rem; }
+dd { margin-left: 2rem; }
 
 blockquote, pre, code, samp { background-color: $text-block-background-color; }
 blockquote, pre { border-left: 4px solid $text-block-border-color; }
@@ -56,7 +57,6 @@ blockquote {
 
 	footer::before { content: "\2014  "; }
 }
-
 pre, code, samp {
 	font-family: $font-family-monospace;
 	font-size: $font-size-monospace;
