@@ -32,7 +32,7 @@ h6 { font-size: $font-size-h6; }
 
 .page-header {
 	padding-bottom: 0.5rem;
-	border-bottom: 2px solid $page-header-border-color;
+	border-bottom: 0.125rem solid $page-header-border-color;
 }
 
 p, ul, ol, dl, pre { margin: 0 0 0.75rem; }
@@ -40,7 +40,7 @@ ul, ol { padding-left: 2rem; }
 dd { margin-left: 2rem; }
 
 blockquote, pre, code, samp { background-color: $text-block-background-color; }
-blockquote, pre { border-left: 4px solid $text-block-border-color; }
+blockquote, pre { border-left: 0.25rem solid $text-block-border-color; }
 blockquote {
 	margin: 1rem 2rem;
 	padding: 0.5rem 0.75rem;
@@ -92,12 +92,3 @@ pre {
 .text-warning	{ @include text-emphasis($theme-warning); }
 .text-danger	{ @include text-emphasis($theme-danger); }
 .text-info		{ @include text-emphasis($theme-info); }
-
-.bg-primary		{ @include background-emphasis($theme-background); }
-.bg-inverse		{ @include background-emphasis($theme-background-inverse); }
-.bg-accent		{ @include background-emphasis($theme-accent); }
-.bg-muted		{ @include background-emphasis($theme-muted); }
-.bg-success		{ @include background-emphasis($theme-success); }
-.bg-warning		{ @include background-emphasis($theme-warning); }
-.bg-danger		{ @include background-emphasis($theme-danger); }
-.bg-info		{ @include background-emphasis($theme-info); }

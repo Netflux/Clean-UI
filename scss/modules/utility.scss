@@ -24,3 +24,23 @@
 		.visible-#{$breakpoint}	{ visibility: visible !important; }
 	}
 }
+
+// Contextual Emphasis
+// ===================================
+.bg-primary		{ @include background-emphasis($theme-background); }
+.bg-inverse		{ @include background-emphasis($theme-background-inverse); }
+.bg-accent		{ @include background-emphasis($theme-accent); }
+.bg-muted		{ @include background-emphasis($theme-muted); }
+.bg-success		{ @include background-emphasis($theme-success); }
+.bg-warning		{ @include background-emphasis($theme-warning); }
+.bg-danger		{ @include background-emphasis($theme-danger); }
+.bg-info		{ @include background-emphasis($theme-info); }
+
+.border-primary	{ @include border-emphasis($theme-background-inverse); }
+.border-inverse	{ @include border-emphasis($theme-background); }
+.border-accent	{ @include border-emphasis($theme-accent); }
+.border-muted	{ @include border-emphasis($theme-muted); }
+.border-success	{ @include border-emphasis($theme-success); }
+.border-warning	{ @include border-emphasis($theme-warning); }
+.border-danger	{ @include border-emphasis($theme-danger); }
+.border-info	{ @include border-emphasis($theme-info); }

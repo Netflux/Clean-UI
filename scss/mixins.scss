@@ -2,7 +2,13 @@
 // Mixins
 // ===================================
 
+// Contextual Emphasis
+// ===================================
 @import "mixins/text-emphasis";
 @import "mixins/background-emphasis";
+@import "mixins/border-emphasis";
+
+// Utility
+// ===================================
 @import "mixins/clearfix";
 @import "mixins/breakpoint";
