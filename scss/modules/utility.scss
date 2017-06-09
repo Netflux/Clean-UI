@@ -32,14 +32,14 @@
 
 // Contextual Emphasis
 // ===================================
-.bg-primary		{ @include background-emphasis($theme-background, darken($theme-background, 5%)); }
-.bg-inverse		{ @include background-emphasis($theme-background-inverse, darken($theme-background-inverse, 5%)); }
-.bg-accent		{ @include background-emphasis($theme-accent, $theme-accent-dark); }
-.bg-muted		{ @include background-emphasis($theme-muted, $theme-muted-dark); }
-.bg-success		{ @include background-emphasis($theme-success, $theme-success-dark); }
-.bg-warning		{ @include background-emphasis($theme-warning, $theme-warning-dark); }
-.bg-danger		{ @include background-emphasis($theme-danger, $theme-danger-dark); }
-.bg-info		{ @include background-emphasis($theme-info, $theme-info-dark); }
+.bg-primary	{ @include background-emphasis($theme-background, darken($theme-background, 5%)); }
+.bg-inverse	{ @include background-emphasis($theme-background-inverse, darken($theme-background-inverse, 5%)); }
+.bg-accent	{ @include background-emphasis($theme-accent, $theme-accent-dark); }
+.bg-muted	{ @include background-emphasis($theme-muted, $theme-muted-dark); }
+.bg-success	{ @include background-emphasis($theme-success, $theme-success-dark); }
+.bg-warning	{ @include background-emphasis($theme-warning, $theme-warning-dark); }
+.bg-danger	{ @include background-emphasis($theme-danger, $theme-danger-dark); }
+.bg-info	{ @include background-emphasis($theme-info, $theme-info-dark); }
 
 .bd-primary	{ @include border-emphasis($theme-background, darken($theme-background, 5%)); }
 .bd-inverse	{ @include border-emphasis($theme-background-inverse, darken($theme-background-inverse, 5%)); }

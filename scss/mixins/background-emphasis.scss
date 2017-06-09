@@ -3,9 +3,7 @@
 
 	@at-root {
 		a#{&}, button#{&} {
-			&:hover {
-				background-color: $color-dark;
-			}
+			&:hover { background-color: $color-dark; }
 		}
 	}
 }

@@ -17,7 +17,5 @@ a {
 		color: $link-hover-color;
 		text-decoration: $link-hover-decoration;
 	}
-	&:focus {
-		outline: none;
-	}
+	&:focus { outline: none; }
 }
