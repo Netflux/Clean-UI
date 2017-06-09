@@ -1,10 +1,10 @@
-@mixin text-emphasis($color) {
+@mixin text-emphasis($color, $color-dark) {
 	color: $color;
 
 	@at-root {
-		a#{&} {
+		a#{&}, button#{&} {
 			&:hover {
-				color: darken($color, 10%);
+				color: $color-dark;
 			}
 		}
 	}

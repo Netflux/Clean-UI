@@ -64,10 +64,15 @@ $theme-inverse:					$dark;
 $theme-accent:					$teal;
 $theme-accent-dark:				$teal-dark;
 $theme-muted:					$grey;
+$theme-muted-dark:				$grey-dark;
 $theme-success:					$green;
+$theme-success-dark:			$green-dark;
 $theme-warning:					$orange;
+$theme-warning-dark:			$orange-dark;
 $theme-danger:					$red;
+$theme-danger-dark:				$red-dark;
 $theme-info:					$blue;
+$theme-info-dark:				$blue-dark;
 $theme-background:				map-get($theme-primary, bg);
 $theme-background-inverse:		map-get($theme-inverse, bg);
 
@@ -107,3 +112,16 @@ $page-header-border-color:		$font-color;
 $text-block-border-color:		$theme-accent;
 $text-block-background-color:	map-get($theme-primary, 2);
 $blockquote-font-color:			map-get($theme-inverse, 5);
+
+// Utility
+// ===================================
+$border-radius:					0.25rem;
+
+// Components
+// ===================================
+$button-color:					$theme-accent;
+$button-color-hover:			$theme-accent-dark;
+$button-color-primary:			map-get($theme-inverse, 2);
+$button-color-primary-hover:	map-get($theme-inverse, 4);
+$button-color-inverse:			map-get($theme-primary, 2);
+$button-color-inverse-hover:	map-get($theme-primary, 4);

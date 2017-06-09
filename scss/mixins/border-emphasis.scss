@@ -1,10 +1,10 @@
-@mixin border-emphasis($color) {
+@mixin border-emphasis($color, $color-dark) {
 	border-color: $color;
 
 	@at-root {
-		a#{&} {
+		a#{&}, button#{&} {
 			&:hover {
-				border-color: darken($color, 10%);
+				border-color: $color-dark;
 			}
 		}
 	}

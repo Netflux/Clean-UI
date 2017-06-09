@@ -4,7 +4,7 @@
 
 // Headings / Body Text
 // ===================================
-html, body {
+html, body, input, button, select, option, textarea {
 	font-family: $font-family;
 	font-size: $font-size;
 	font-weight: $font-weight-normal;
@@ -84,11 +84,11 @@ pre {
 
 // Contextual Emphasis
 // ===================================
-.text-primary	{ @include text-emphasis($font-color); }
-.text-inverse	{ @include text-emphasis($font-color-inverse); }
-.text-accent	{ @include text-emphasis($theme-accent); }
-.text-muted		{ @include text-emphasis($theme-muted); }
-.text-success	{ @include text-emphasis($theme-success); }
-.text-warning	{ @include text-emphasis($theme-warning); }
-.text-danger	{ @include text-emphasis($theme-danger); }
-.text-info		{ @include text-emphasis($theme-info); }
+.text-primary	{ @include text-emphasis($font-color, darken($font-color, 5%)); }
+.text-inverse	{ @include text-emphasis($font-color-inverse, darken($font-color-inverse, 5%)); }
+.text-accent	{ @include text-emphasis($theme-accent, $theme-accent-dark); }
+.text-muted		{ @include text-emphasis($theme-muted, $theme-muted-dark); }
+.text-success	{ @include text-emphasis($theme-success, $theme-success-dark); }
+.text-warning	{ @include text-emphasis($theme-warning, $theme-warning-dark); }
+.text-danger	{ @include text-emphasis($theme-danger, $theme-danger-dark); }
+.text-info		{ @include text-emphasis($theme-info, $theme-info-dark); }

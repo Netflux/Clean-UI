@@ -1,0 +1,120 @@
+// Button
+// ===================================
+.btn {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: $white;
+	background-color: $button-color;
+	border: 0.125rem solid $button-color;
+	cursor: pointer;
+
+	&:hover {
+		color: $white;
+		background-color: $button-color-hover;
+		border-color: $button-color-hover;
+	}
+	&:focus { outline: none; }
+
+	&.primary {
+		color: $font-color-inverse;
+		background-color: $button-color-primary;
+		border-color: $button-color-primary;
+	}
+	&.inverse {
+		color: $font-color;
+		background-color: $button-color-inverse;
+		border-color: $button-color-inverse;
+	}
+	&.accent {
+		background-color: $theme-accent;
+		border-color: $theme-accent;
+	}
+	&.muted {
+		background-color: $theme-muted;
+		border-color: $theme-muted;
+	}
+	&.success {
+		background-color: $theme-success;
+		border-color: $theme-success;
+	}
+	&.warning {
+		background-color: $theme-warning;
+		border-color: $theme-warning;
+	}
+	&.danger {
+		background-color: $theme-danger;
+		border-color: $theme-danger;
+	}
+	&.info {
+		background-color: $theme-info;
+		border-color: $theme-info;
+	}
+
+	&.primary:hover {
+		background-color: $button-color-primary-hover;
+		border-color: $button-color-primary-hover;
+	}
+	&.inverse:hover {
+		background-color: $button-color-inverse-hover;
+		border-color: $button-color-inverse-hover;
+	}
+	&.accent:hover {
+		background-color: $theme-accent-dark;
+		border-color: $theme-accent-dark;
+	}
+	&.muted:hover {
+		background-color: $theme-muted-dark;
+		border-color: $theme-muted-dark;
+	}
+	&.success:hover {
+		background-color: $theme-success-dark;
+		border-color: $theme-success-dark;
+	}
+	&.warning:hover {
+		background-color: $theme-warning-dark;
+		border-color: $theme-warning-dark;
+	}
+	&.danger:hover {
+		background-color: $theme-danger-dark;
+		border-color: $theme-danger-dark;
+	}
+	&.info:hover {
+		background-color: $theme-info-dark;
+		border-color: $theme-info-dark;
+	}
+
+	&.btn-outline, &.btn-clear {
+		color: $button-color;
+		background-color: transparent;
+
+		&:hover {
+			color: $button-color-hover;
+			background-color: transparent;
+		}
+
+		&.primary	{ color: $button-color-primary; }
+		&.inverse	{ color: $button-color-inverse; }
+		&.accent	{ color: $theme-accent; }
+		&.muted		{ color: $theme-muted; }
+		&.success	{ color: $theme-success; }
+		&.warning	{ color: $theme-warning; }
+		&.danger	{ color: $theme-danger; }
+		&.info		{ color: $theme-info; }
+
+		&.primary:hover	{ color: $button-color-primary-hover; }
+		&.inverse:hover	{ color: $button-color-inverse-hover; }
+		&.accent:hover	{ color: $theme-accent-dark; }
+		&.muted:hover	{ color: $theme-muted-dark; }
+		&.success:hover	{ color: $theme-success-dark; }
+		&.warning:hover	{ color: $theme-warning-dark; }
+		&.danger:hover	{ color: $theme-danger-dark; }
+		&.info:hover	{ color: $theme-info-dark; }
+	}
+
+	&.btn-clear, &.btn-clear:hover {
+		border-color: transparent;
+	}
+}

@@ -14,6 +14,11 @@
 	margin-right: auto;
 }
 
+// Sizing
+// ===================================
+.full-w	{ width: 100%; }
+.full-h	{ height: 100%; }
+
 // Visiblity
 // ===================================
 @each $breakpoint in map-keys($breakpoints) {
@@ -27,20 +32,24 @@
 
 // Contextual Emphasis
 // ===================================
-.bg-primary		{ @include background-emphasis($theme-background); }
-.bg-inverse		{ @include background-emphasis($theme-background-inverse); }
-.bg-accent		{ @include background-emphasis($theme-accent); }
-.bg-muted		{ @include background-emphasis($theme-muted); }
-.bg-success		{ @include background-emphasis($theme-success); }
-.bg-warning		{ @include background-emphasis($theme-warning); }
-.bg-danger		{ @include background-emphasis($theme-danger); }
-.bg-info		{ @include background-emphasis($theme-info); }
+.bg-primary		{ @include background-emphasis($theme-background, darken($theme-background, 5%)); }
+.bg-inverse		{ @include background-emphasis($theme-background-inverse, darken($theme-background-inverse, 5%)); }
+.bg-accent		{ @include background-emphasis($theme-accent, $theme-accent-dark); }
+.bg-muted		{ @include background-emphasis($theme-muted, $theme-muted-dark); }
+.bg-success		{ @include background-emphasis($theme-success, $theme-success-dark); }
+.bg-warning		{ @include background-emphasis($theme-warning, $theme-warning-dark); }
+.bg-danger		{ @include background-emphasis($theme-danger, $theme-danger-dark); }
+.bg-info		{ @include background-emphasis($theme-info, $theme-info-dark); }
 
-.border-primary	{ @include border-emphasis($theme-background-inverse); }
-.border-inverse	{ @include border-emphasis($theme-background); }
-.border-accent	{ @include border-emphasis($theme-accent); }
-.border-muted	{ @include border-emphasis($theme-muted); }
-.border-success	{ @include border-emphasis($theme-success); }
-.border-warning	{ @include border-emphasis($theme-warning); }
-.border-danger	{ @include border-emphasis($theme-danger); }
-.border-info	{ @include border-emphasis($theme-info); }
+.bd-primary	{ @include border-emphasis($theme-background, darken($theme-background, 5%)); }
+.bd-inverse	{ @include border-emphasis($theme-background-inverse, darken($theme-background-inverse, 5%)); }
+.bd-accent	{ @include border-emphasis($theme-accent, $theme-accent-dark); }
+.bd-muted	{ @include border-emphasis($theme-muted, $theme-muted-dark); }
+.bd-success	{ @include border-emphasis($theme-success, $theme-success-dark); }
+.bd-warning	{ @include border-emphasis($theme-warning, $theme-warning-dark); }
+.bd-danger	{ @include border-emphasis($theme-danger, $theme-danger-dark); }
+.bd-info	{ @include border-emphasis($theme-info, $theme-info-dark); }
+
+// Appearance
+// ===================================
+.bd-round { border-radius: $border-radius; }
