@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Clean UI is a CSS theme that promotes clarity through the use of clean visuals",
   "scripts": {
-    "start": "./bin/start",
-    "build": "./bin/build",
-    "watch": "./bin/watch"
+    "start": "node index.js",
+    "build": "node-sass --include-path scss scss/clean-ui.scss dist/css/clean-ui.css",
+    "build-min": "node-sass --output-style compressed --include-path scss scss/clean-ui.scss dist/css/clean-ui.min.css",
+    "watch": "npm run build; node-sass -w --include-path scss scss/clean-ui.scss dist/css/clean-ui.css"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,8 @@
   "homepage": "https://github.com/Netflux/Clean-UI#readme",
   "dependencies": {},
   "devDependencies": {
+    "chokidar": "^1.7.0",
     "node-sass": "^4.5.3",
-    "nodemon": "^1.11.0"
+    "node-static": "^0.7.9"
   }
 }
