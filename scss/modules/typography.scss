@@ -35,25 +35,26 @@ h6 { font-size: $font-size-h6; }
 	border-bottom: 0.125rem solid $page-header-border-color;
 }
 
-p, ul, ol, dl, pre	{ margin: 0 0 0.75rem; }
-ul, ol				{ padding-left: 2rem; }
-dd					{ margin-left: 2rem; }
+p, ul, ol, dl, pre			{ margin: 0 0 0.75rem; }
+ul ul, ul ol, ol ul, ol ol	{ margin-bottom: 0; }
+ul, ol						{ padding-left: 1.5rem; }
+dt							{ font-weight: $font-weight-bold; }
+dd							{ margin-left: 1.5rem; }
 
 blockquote, pre, code, samp	{ background-color: $text-block-background-color; }
 blockquote, pre				{ border-left: 0.25rem solid $text-block-border-color; }
 blockquote {
-	margin: 1rem 2rem;
+	margin: 1rem 1.5rem;
 	padding: 0.5rem 0.75rem;
 
 	p, footer {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		font-style: italic;
 		font-weight: $font-weight-thin;
-		margin-bottom: 0;
 	}
 
 	small, footer	{ color: $blockquote-font-color; }
-	small			{ font-size: 1rem; }
+	small			{ font-size: 0.9rem; }
 	footer::before	{ content: "\2014  "; }
 }
 pre, code, samp {
