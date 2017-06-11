@@ -52,10 +52,13 @@ blockquote {
 		font-style: italic;
 		font-weight: $font-weight-thin;
 	}
+	p { margin-bottom: 0.25rem; }
 
 	small, footer	{ color: $blockquote-font-color; }
 	small			{ font-size: 0.9rem; }
+
 	footer::before	{ content: "\2014  "; }
+	footer			{ font-weight: $font-weight-bold; }
 }
 pre, code, samp, .monospace {
 	font-family: $font-family-monospace;
