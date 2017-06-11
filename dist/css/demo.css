@@ -2,14 +2,31 @@
  * Demo
  * =================================== */
 
+/* General
+ * =================================== */
 .container {
 	max-width: 60rem;
 	margin: auto;
 	padding: 0 1.5rem;
 }
+.demo-header {
+	margin: 2rem 0 1rem 0;
+	font-size: 3rem;
+}
+.section-link {
+	display: inline-block;
+	width: 100%;
+	padding: 1rem 0;
+	text-decoration: none;
+	transition: background-color 0.25s;
+}
+.section-link:hover {
+	background-color: #eef0f2;
+}
 
+/* Utilities
+ * =================================== */
 .box {
 	width: 8rem;
 	padding: 1rem;
-	background-color: #3a4046;
 }
