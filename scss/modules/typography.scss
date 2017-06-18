@@ -65,6 +65,11 @@ pre {
 	overflow: auto;
 }
 code, kbd, samp, var { padding: 0.125rem; }
+kbd {
+	font-size: 0.875rem;
+	color: $kbd-font-color;
+	background-color: $kbd-background-color;
+}
 mark {
 	background-color: $mark-background-color;
 	padding: 0 0.125rem;

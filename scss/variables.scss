@@ -112,6 +112,8 @@ $page-header-border-color:		$font-color;
 $text-block-border-color:		$theme-accent;
 $text-block-background-color:	map-get($theme-primary, 2);
 $blockquote-font-color:			map-get($theme-inverse, 5);
+$kbd-font-color:				$font-color-inverse;
+$kbd-background-color:			$font-color;
 $mark-background-color:			$yellow;
 
 // Utility
