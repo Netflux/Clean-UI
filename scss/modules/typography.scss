@@ -2,7 +2,7 @@
 // Typography
 // ===================================
 
-// Headings / Body Text
+// Headings
 // ===================================
 html, body, input, button, select, option, textarea {
 	font-family: $font-family;
@@ -35,14 +35,10 @@ h6 { font-size: $font-size-h6; }
 	border-bottom: 0.125rem solid $page-header-border-color;
 }
 
-p, ul, ol, dl, pre			{ margin: 0 0 0.75rem; }
-ul ul, ul ol, ol ul, ol ol	{ margin-bottom: 0; }
-ul, ol						{ padding-left: 1.5rem; }
-dt							{ font-weight: $font-weight-bold; }
-dd							{ margin-left: 1.5rem; }
-
-blockquote, pre, code, samp	{ background-color: $text-block-background-color; }
-blockquote, pre				{ border-left: 0.25rem solid $text-block-border-color; }
+// Semantic Text Elements
+// ===================================
+blockquote, pre, code	{ background-color: $text-block-background-color; }
+blockquote, pre			{ border-left: 0.25rem solid $text-block-border-color; }
 blockquote {
 	margin: 1rem 1.5rem;
 	padding: 0.5rem 0.75rem;
@@ -68,6 +64,19 @@ pre {
 	padding: 0.5rem;
 	overflow: auto;
 }
+code, kbd, samp, var { padding: 0.125rem; }
+mark {
+	background-color: $mark-background-color;
+	padding: 0 0.125rem;
+}
+
+// Lists
+// ===================================
+p, ul, ol, dl, pre			{ margin: 0 0 0.75rem; }
+ul ul, ul ol, ol ul, ol ol	{ margin-bottom: 0; }
+ul, ol						{ padding-left: 1.5rem; }
+dt							{ font-weight: $font-weight-bold; }
+dd							{ margin-left: 1.5rem; }
 
 // Text Transformation
 // ===================================
